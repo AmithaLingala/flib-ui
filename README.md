@@ -1,4 +1,5 @@
-# flib-ui
+# Flib
+The front end for Flib -  Free/Libre Books *(or Free Library)*
 
 ## Project setup
 ```

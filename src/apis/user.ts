@@ -13,3 +13,15 @@ export async function register(data: any) {
         }
     }
 }
+
+export async function login(data: any) {
+    try {
+        const result = await axios.post(URL + 'login', data);
+        console.log(result);
+        return result.data;
+    } catch(error) {
+        return {
+            error: error.message,
+        }
+    }
+}

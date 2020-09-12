@@ -16,7 +16,7 @@
                   <li v-for="(error, i) in errors" :key="i">{{ error }}</li>
                 </ul>
               </div>
-              <div class="content">
+              <form action="#">
                 <div class="field">
                   <div class="control">
                     User name
@@ -52,7 +52,7 @@
                   value="Submit input"
                   @click="signup"
                 >Sign up</button>
-              </div>
+              </form>
             </div>
           </a>
         </div>

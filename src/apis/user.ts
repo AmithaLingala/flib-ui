@@ -33,3 +33,19 @@ export async function login(data: any) {
         }
     }
 }
+
+let userDetails = null;
+export function getUserDetails(): any| null {
+    const data = localStorage.getItem("userInfo");
+    if(data) {
+        userDetails = JSON.parse(data)
+    } else {
+        return null;
+    }
+    return userDetails;
+}
+
+export function setUserDetails(value: string): any| null {
+    localStorage.setItem("userInfo", value);
+    userDetails = null;
+}

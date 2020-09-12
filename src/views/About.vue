@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero is-info">
+    <section class="hero is-link">
       <div class="hero-body">
         <div class="container is-fluid">
           <h1 class="title">Flib</h1>

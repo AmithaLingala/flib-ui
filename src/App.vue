@@ -20,16 +20,30 @@
       <template slot="end">
         <b-navbar-item tag="div">
           <div class="buttons">
-            <div v-if="userDetails.uname === null">
-              <b-navbar-item href="/signup" class="button is-info">
-                <strong>Sign up</strong>
-              </b-navbar-item>
-              <b-navbar-item href="/login" class="button is-light">
-                <strong>Log in</strong>
-              </b-navbar-item>
-            </div>
-            <b-navbar-item v-else href="/profile" class="button is-info">
-              <strong>{{userDetails.uname}}</strong>
+            <b-navbar-item v-if="!userDetails" href="/signup" class="button is-link">
+              <strong>Sign up</strong>
+            </b-navbar-item>
+            <b-navbar-item v-if="!userDetails" href="/login" class="button is-light">
+              <strong>Log in</strong>
+            </b-navbar-item>
+            <b-navbar-item v-else>
+              <b-dropdown aria-role="list">
+                <button class="button is-link" slot="trigger" slot-scope="{ active }">
+                  <span>{{userDetails.uname}}</span>
+                  <b-icon :icon="active ? 'menu-up' : 'menu-down'"></b-icon>
+                </button>
+
+                <b-dropdown-item aria-role="listitem" href="/profile">Profile</b-dropdown-item>
+                <b-dropdown-item aria-role="listitem">Settings</b-dropdown-item>
+                <b-dropdown-item aria-role="listitem">
+                  <button
+                    class="button is-link"
+                    type="submit"
+                    value="Submit input"
+                    @click="logout"
+                  >Logout</button>
+                </b-dropdown-item>
+              </b-dropdown>
             </b-navbar-item>
           </div>
         </b-navbar-item>
@@ -56,13 +70,22 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
+import { getUserDetails } from "./apis/user";
 
 @Component
 export default class Home extends Vue {
   @Prop() private msg!: string;
-  private userDetails: any = JSON.parse(
-    localStorage.getItem("userInfo") || "{}"
-  );
+  private userDetails = getUserDetails();
+  logout(): void {
+    localStorage.clear();
+    const data = localStorage.getItem("userInfo");
+    this.userDetails = null;
+    this.$router.push("/");
+  }
+  @Watch("$route", { immediate: true, deep: true })
+  onUrlChange(newVal: any) {
+    this.userDetails = getUserDetails();
+  }
 }
 </script>

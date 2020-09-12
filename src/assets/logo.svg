@@ -47,11 +47,11 @@
      bordercolor="#666666"
      pagecolor="#ffffff" />
   <g
-     style="stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+     style="stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
      id="g103"
      transform="translate(374.49 -22.881)">
     <path
-       style="stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="path101"
        fill="#000"
        d="m-282.17 305.1c-1.3841-2.3375-5.9563-10.325-10.161-17.75s-17.42-30.516-29.369-51.313c-11.948-20.797-21.936-38.401-22.193-39.119-0.25851-0.71978 0.32893-1.5284 1.3094-1.8023 1.3224-0.36948 2.0629-2.043 2.8888-6.528 1.3949-7.5755 4.2378-12.195 9.0221-14.661 2.0522-1.0577 9.6276-5.8209 16.834-10.585 18.365-12.14 20.625-13.47 28.546-16.796 12.813-5.3807 27.233-7.7022 35.565-5.7261 3.9315 0.9324 11.168 4.7251 16.583 8.691l3.9477 2.8915 6.3474-6.8908c3.4911-3.7899 8.5514-8.0804 11.245-9.5344 9.4602-5.1061 13.78-5.7718 43.77-6.7459 15.443-0.50158 29.973-1.1625 32.289-1.4688l4.2116-0.5568 48.987 35.639c26.943 19.601 49.517 35.856 50.164 36.121 0.80459 0.32989 1.0417 1.9842 0.74974 5.2308l-0.42701 4.7483 18.082 14.522-0.58699 4.6917c-0.32284 2.5804-0.72934 5.1886-0.90333 5.7959-0.17398 0.60729-3.6171 1.4169-7.6515 1.7991-8.5879 0.81364-57.182 7.2909-84.081 11.207-17.882 2.6036-18.913 2.8748-23.067 6.0668-10.007 7.6882-20.514 10.851-33.332 10.034-8.5361-0.54414-9.216-0.42526-19.741 3.4518-27.312 10.061-57.199 23.102-82.373 35.945-7.4309 3.7907-13.652 6.8922-13.825 6.8922-0.17313 0-1.4472-1.9125-2.8313-4.25zm29.635-18.068c40.299-23.322 61.301-31.213 81.167-30.496l8.6858 0.31341 3e-3 -2.5c6e-3 -4.4316 1.8464-9.7702 5.2111-15.112 3.958-6.2842 3.5334-6.8055-5.6863-6.9832-28.16-0.54258-41.962 3.6846-74.164 22.713-12.286 7.26-30.839 17.415-33.87 18.54-0.50848 0.18855-1.4215 5.7428-2.0289 12.343-0.60741 6.6-1.5721 12.632-2.1439 13.405-1.2422 1.6789-0.59577 1.3328 22.827-12.222zm-24.15-7.6823 0.28438-6.5-27.603-46.752c-15.182-25.714-28.027-46.606-28.546-46.426-1.4208 0.49173-3.2091 4.9369-4.1493 10.314-0.66811 3.8211-0.52194 5.4429 0.71564 7.9402 0.85539 1.7261 14.19 24.587 29.633 50.802l28.078 47.664 0.65154-5.2707c0.35835-2.8989 0.77951-8.1957 0.93592-11.771zm11.565-11.866c4.0908-2.1264 14.889-8.3598 23.996-13.852 29.888-18.025 44.329-23.089 68.826-24.134l15.19-0.64811-33.618-34.745c-35.587-36.779-42.44-43.052-52.89-48.41-5.4328-2.7854-7.5936-3.3454-12.908-3.3454-14.096 0-29.571 5.4325-45.894 16.111-5.2504 3.4347-13.665 8.9139-18.699 12.176l-9.1526 5.9311 1.876 3.1411c1.0318 1.7276 13.574 23.032 27.871 47.343s26.438 44.224 26.98 44.25c0.54198 0.0263 4.3325-1.692 8.4233-3.8184zm136.81-23.774c6.3586-5.5337 16.462-10.901 23.08-12.26 7.0301-1.4444 28.996-2.9821 53.221-3.7258 11.711-0.35951 21.289-0.70314 21.285-0.76363-4e-3 -0.0605-0.82178-2.9724-1.8175-6.4708-0.99567-3.4985-2.0939-8.786-2.4405-11.75-0.34924-2.9867-1.1036-5.3766-1.6922-5.3611-45.787 1.2104-75.508 4.7983-90.709 10.95-6.6304 2.6835-15.17 10.839-20.891 19.95-2.2318 3.5547-3.862 6.6724-3.6225 6.9283s2.67-0.10756 5.4013-0.80763c6.8612-1.7587 8.3129-1.2452 10.463 3.7007 1.0162 2.3375 1.9698 4.25 2.119 4.25 0.14928 0 2.6707-2.0881 5.6032-4.6402zm-11.298-25.822c9.2563-7.5516 23.428-12.433 41.972-14.458 8.934-0.97553 53.771-4.0797 58.927-4.0797 1.6081 0 1.6675-0.17827 0.47028-1.4106-0.75375-0.77585-22.218-16.557-47.698-35.069-41.531-30.173-46.619-33.596-49.136-33.061-1.5443 0.32878-15.443 0.98147-30.885 1.4504-30.181 0.9165-35.211 1.6426-43.973 6.3472-5.2776 2.8338-16.851 14.001-16.212 15.644 0.15742 0.40494 17.262 17.949 38.01 38.987l37.724 38.251 3.2469-4.5434c1.7858-2.4989 5.1851-6.1247 7.554-8.0574z" />
@@ -61,9 +61,9 @@
      id="text115"
      y="227.32933"
      x="-27.842068"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.4973px;line-height:1.25;font-family:Z003;-inkscape-font-specification:'Z003, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;mix-blend-mode:normal;fill:#167df0;fill-opacity:1;stroke:none;stroke-width:1.28743;image-rendering:auto;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.4973px;line-height:1.25;font-family:Z003;-inkscape-font-specification:'Z003, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;mix-blend-mode:normal;fill:#9400ff;fill-opacity:1;stroke:none;stroke-width:1.28743;image-rendering:auto;"
      xml:space="preserve"><tspan
-       style="stroke-width:1.28743;fill:#167df0;fill-opacity:1;"
+       style="stroke-width:1.28743;fill:#9400ff;fill-opacity:1;"
        y="227.32933"
        x="-27.842068"
        id="tspan113"
@@ -79,73 +79,73 @@
        id="tspan1672"
        sodipodi:role="line" /></text>
   <g
-     style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+     style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
      transform="matrix(0.18,0,0,0.18,191.5195,-2.4749861)"
      id="g1883">
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1851">
       <g
-         style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+         style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
          id="g1849">
         <path
-           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
            id="path3758"
            d="m 343.7,797.1 c -1.6,0.4 -18.1,14.8 -36.6,33.2 -14.8,14.6 -28.9,28.9 -32.6,34 -4.9,6.6 1.6,8.6 7.2,4.2 5.6,-4.3 21.8,-18.1 51.3,-23.9 33,-6.5 46.8,-12.7 59.2,-44.2 5,-12.7 9.4,-24.1 13.1,-33.7 7.1,-18.6 7.6,-38.8 0.4,-45.5 -7.2,-6.6 -34.6,13.5 -60.9,45.1 -1.1,1.4 -2.3,2.7 -3.4,4.1 -26.3,31.7 -37.4,47.9 -25.1,36 10.6,-10.1 21.1,-20.2 22.4,-21.4 2.5,-2.3 6.6,-1.1 8.5,1.1 2.4,2.9 2,7.2 -0.9,9.6 -0.8,0.7 -1.7,1.1 -2.6,1.4" />
         <path
-           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
            id="path3760"
            d="m 24.5,841.7 c 3.3,-0.8 22.3,-4.2 28.6,-4.3 1.2,0 1.7,1.2 1.1,1.7 -2.5,2 -9,4.8 -9.9,5.3 -16.5,9 -17.4,16.6 -17.1,20.3 1.1,10.2 15.5,18.7 68.1,15.5 21.7,-1.8 42.8,-5.7 62.4,-8.9 19.6,-3.3 44,-6.3 53.4,-6.3 28.5,0 30.7,8 52.2,8 1.9,0 3.4,-0.4 3.4,-2.5 0,-2.1 -2.1,-2.5 -3.3,-2.6 -18.1,0 -22.7,-11.7 -52.4,-11.6 -16.3,-0.1 -21.4,-0.4 -65.9,5.8 -44.5,6.2 -97.5,8.9 -97.5,-0.2 0,-5.2 36.8,-15 36.8,-30 0,-8 -10.1,-19.4 -63.8,-9.8 -4.7,0.9 -10.9,4 -10.5,10.8 0.3,6.3 5.3,11.3 14.4,8.8" />
         <path
-           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
            id="path3762"
            d="m 964.1,125.8 c -278,264.3 -370.5,349.9 -517,519.5 -26.9,31.2 -42.6,62.1 -35.4,68.9 7.2,6.7 81.6,1.8 125.3,-36.8 49.4,-33 439.9,-522.8 448.2,-533.3 13.2,-16.8 -3.1,-35.5 -21.1,-18.3" />
       </g>
     </g>
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1853" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1855" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1857" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1859" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1861" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1863" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1865" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1867" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1869" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1871" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1873" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1875" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1877" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1879" />
     <g
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#167df0;stroke-opacity:1;fill:#167df0;fill-opacity:1"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#9400ff;stroke-opacity:1;fill:#9400ff;fill-opacity:1"
        id="g1881" />
   </g>
 </svg>

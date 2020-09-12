@@ -17,8 +17,16 @@ export async function register(data: any) {
 export async function login(data: any) {
     try {
         const result = await axios.post(URL + 'login', data);
-        console.log(result);
+        const mydata = "userInfo";
+        //console.log(result);
+        window.localStorage;
+        localStorage.setItem(mydata, JSON.stringify(result.data.userDetails));
+        const userDetails = localStorage.getItem(mydata);
+        //console.log("uwuuuuuuu"+uname);
+        
+
         return result.data;
+        
     } catch(error) {
         return {
             error: error.message,

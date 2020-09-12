@@ -20,11 +20,16 @@
       <template slot="end">
         <b-navbar-item tag="div">
           <div class="buttons">
-            <b-navbar-item href="/signup" class="button is-info">
-              <strong>Sign up</strong>
-            </b-navbar-item>
-            <b-navbar-item href="/login" class="button is-light">
-              <strong>Log in</strong>
+            <div v-if="userDetails.uname === null">
+              <b-navbar-item href="/signup" class="button is-info">
+                <strong>Sign up</strong>
+              </b-navbar-item>
+              <b-navbar-item href="/login" class="button is-light">
+                <strong>Log in</strong>
+              </b-navbar-item>
+            </div>
+            <b-navbar-item v-else href="/profile" class="button is-info">
+              <strong>{{userDetails.uname}}</strong>
             </b-navbar-item>
           </div>
         </b-navbar-item>
@@ -42,9 +47,22 @@
             href="https://github.com/codingotaku/flib-ui/blob/master/LICENSE"
           >GNU GENERAL PUBLIC LICENSE Version 2</a>. The website content
           is licensed
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          <a
+            href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+          >CC BY NC SA 4.0</a>.
         </p>
       </div>
     </footer>
   </div>
 </template>
+<script lang="ts">
+import { Component, Prop, Vue } from "vue-property-decorator";
+
+@Component
+export default class Home extends Vue {
+  @Prop() private msg!: string;
+  private userDetails: any = JSON.parse(
+    localStorage.getItem("userInfo") || "{}"
+  );
+}
+</script>

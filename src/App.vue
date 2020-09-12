@@ -35,8 +35,8 @@
       <div class="content has-text-centered">
         <p>
           <strong>Flib</strong> by
-          <a href="https://exeami.com">Exeami</a> and
-          <a href="https://codingotaku.com">Coding Otaku</a>.
+          <a href="https://exeami.com" target="_blank">Exeami</a> and
+          <a href="https://codingotaku.com" target="_blank">Coding Otaku</a>.
           The source code is licensed
           <a
             href="https://github.com/codingotaku/flib-ui/blob/master/LICENSE"

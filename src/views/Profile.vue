@@ -25,7 +25,7 @@
             </b-field>
           </div>
           <div class="card box">
-            <b-field label="profile_desc">
+            <b-field label="Profile Description">
               <div class="content">{{userProfile.profile_desc}}</div>
             </b-field>
           </div>
@@ -38,14 +38,14 @@
               target="_blank"
             >{{link.title}}</a>
           </b-field>
-          <b-button type="is-link" @click="cardModal()">Edit</b-button>
+          <b-button type="is-link" @click="cardModal()">Edit Profile</b-button>
         </div>
         <div v-show="menu==='reading'">
           <div class="subtitle">Add your Favorite Book here and enjoy reading !!</div>
         </div>
         <div v-show="menu==='writing'">
           <div class="subtitle">Waiting for your story!!</div>
-          <b-button type="is-link" href>Add Book</b-button>
+          <a class="button is-primary"  href='/write'>Add Book</a>
         </div>
       </div>
     </div>

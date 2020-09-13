@@ -66,6 +66,7 @@ export default class EditProfile extends Vue {
   private file: any | null;
   private name = "";
   private profileDesc = "";
+  
   private links: Array<any> = [
     {
       title: "",

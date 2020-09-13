@@ -71,7 +71,7 @@ export default class Login extends Vue {
       };
       login(request).then(result=>{
         if(result.error === null) {
-          this.$router.push("/Read");
+          this.$router.push("/");
         } else {
           this.errors.splice(0);
           this.errors.push(result.error);

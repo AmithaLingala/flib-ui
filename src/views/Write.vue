@@ -35,7 +35,7 @@
           <nav class="level">
             <div class="level-left">
               <div class="level-item">
-                <button class="button is-info" @click="submit()">Submit</button>
+                <button class="button is-info" type="submit" @click="submit()">Submit</button>
               </div>
             </div>
             <div class="level-right">
@@ -63,7 +63,7 @@ export default class Write extends Vue {
   private bookDesc = "";
   private postanon = false;
 
-  submit() {
+  async submit() {
     const data = {
       title: this.bookName,
       description: this.bookDesc,
@@ -71,7 +71,12 @@ export default class Write extends Vue {
       annonymous: this.postanon,
       cover: this.file,
     };
-    createBook(data);
+    const result = await createBook(data);
+    console.log(result);
+    this.$router.push({
+      name: "EditBook",
+      params: { id: result.response.insertId },
+    });
   }
 
   @Watch("file")

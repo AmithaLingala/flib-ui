@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <form class="container" action="#">
+    <div class="container">
       <article class="media">
         <figure class="media-left">
           <b-upload v-if="file" v-model="file">
@@ -48,7 +48,7 @@
           </nav>
         </div>
       </article>
-    </form>
+    </div>
   </section>
 </template>
 <script lang="ts">

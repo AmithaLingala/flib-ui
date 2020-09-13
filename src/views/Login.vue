@@ -15,7 +15,7 @@
                   <li v-for="(error, i) in errors" :key="i">{{ error }}</li>
                 </ul>
               </div>
-              <form action="#">
+              <div>
                 <div class="field">
                   <div class="control">
                     User name<input v-model="uname" class="input is-primary" type="text"  placeholder="user name or email"/>
@@ -34,7 +34,7 @@
                   value="Submit input"
                   @click="login"
                 > Login</button>
-              </form>
+              </div>
             </div>
           </a>
         </div>

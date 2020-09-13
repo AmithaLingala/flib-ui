@@ -100,20 +100,14 @@ export async function getProfile() {
     return null;
 }
 export async function getbooks() {
-    if (userDetails !== null) {
-        const result = await axios.get(URL + 'books', {
+    const result = await axios.get(URL + 'books', {
 
-        });
-        return result.data;
-    }
-    return null;
+    });
+    return result.data;
 }
 export async function getPages(id: any) {
-    if (userDetails !== null) {
-        const result = await axios.get(URL + 'pages/?id=' + id);
-        return result.data;
-    }
-    return null;
+    const result = await axios.get(URL + 'pages/?id=' + id);
+    return result.data;
 }
 
 export function getUserDetails(): any | null {

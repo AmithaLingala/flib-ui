@@ -83,8 +83,8 @@ export default class Profile extends Vue {
       }
     });
     getProfile().then((response: any) => {
-      if (response.data) {
-        this.userProfile = response.data;
+      if (response) {
+        this.userProfile = response;
         console.log(this.userProfile);
       }
     });

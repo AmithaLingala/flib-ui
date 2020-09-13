@@ -1,5 +1,5 @@
 <template>
-  <form action="#">
+  <div>
     <div class="modal-card">
       <header class="modal-card-head">
         <p class="modal-card-title">Edit Profile</p>
@@ -53,7 +53,7 @@
         >Update</button>
       </footer>
     </div>
-  </form>
+  </div>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";

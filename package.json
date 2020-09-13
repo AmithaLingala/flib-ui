@@ -1,5 +1,5 @@
 {
-  "name": "Flib",
+  "name": "flib-ui",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,9 +14,12 @@
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2",
-    "vue-router": "^3.2.0"
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.2.0",
+    "vue2-editor": "^2.10.2"
   },
   "devDependencies": {
+    "@types/vue2-editor": "^2.6.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",

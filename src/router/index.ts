@@ -45,6 +45,11 @@ const routes: Array<RouteConfig> = [
   path: '/profile',
   name: 'Profile',
   component: () => import(/* webpackChunkName: "Profile" */ '../views/Profile.vue')
+},
+{
+  path: '/editbook',
+  name: 'EditBook',
+  component: () => import(/* webpackChunkName: "EditBook" */ '../views/EditBook.vue')
 }
 ]
 

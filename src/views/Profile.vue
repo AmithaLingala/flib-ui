@@ -4,11 +4,12 @@
       <div class="column is-2">
         <div class="card box">
           <div class="block">
-            <img v-if="!isPPLoaded" id="profile-image" alt />
-            <img v-else src="../assets/default_pp.svg" alt />
+            <img id="profile-image" alt="profile picture" />
+            {{userDetails.uname}}
           </div>
+
           <b-menu class="is-custom-mobile">
-            <b-menu-list label="Menu">
+            <b-menu-list>
               <b-menu-item label="Info" @click="menu = 'info'"></b-menu-item>
               <b-menu-item label="Reading" @click="menu = 'reading'"></b-menu-item>
               <b-menu-item label="Writing" @click="menu = 'writing'"></b-menu-item>
@@ -20,37 +21,57 @@
         <div v-show="menu==='info'">
           <div class="card box">
             <b-field label="Name">
-              <b-field :label="userDetails.name || ''"></b-field>
+              <b-field :label="userProfile.name"></b-field>
             </b-field>
           </div>
           <div class="card box">
-            <b-field label="Username">
-              <b-field :label="userDetails.uname || ''"></b-field>
+            <b-field label="profile_desc">
+              <div class="content">{{userProfile.profile_desc}}</div>
             </b-field>
           </div>
-          <div class="card box">
-            <b-field label="Bio">
-              <div class="content">{{userDetails.bio}}</div>
-            </b-field>
-          </div>
-          <b-button type="is-link">Edit</b-button>
+          <b-field label="Social links">
+            <a
+              v-for="(link, i) in userProfile.links"
+              :key="i"
+              :href="link.href"
+              class="button mr-3"
+              target="_blank"
+            >{{link.title}}</a>
+          </b-field>
+          <b-button type="is-link" @click="cardModal()">Edit</b-button>
         </div>
-        <div v-show="menu==='reading'">reading</div>
-        <div v-show="menu==='writing'">writing</div>
+        <div v-show="menu==='reading'">
+          <div class="subtitle">Add your Favorite Book here and enjoy reading !!</div>
+        </div>
+        <div v-show="menu==='writing'">
+          <div class="subtitle">Waiting for your story!!</div>
+          <b-button type="is-link" href>Add Book</b-button>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import { getUserDetails, getPP } from "../apis/user";
-@Component
+import { Component, Prop, Vue } from "vue-property-decorator";
+import { getUserDetails, getPP, getProfile } from "../apis/user";
+import EditProfile from "@/components/EditProfile.vue";
+@Component({
+  components: {
+    EditProfile,
+  },
+})
 export default class Profile extends Vue {
   private menu = "info";
   private userDetails = getUserDetails();
-  private pp = "";
-  private isPPLoaded = false;
+  @Prop({
+    default: () => {
+      return { links: [] };
+    },
+  })
+  private userProfile: any;
+
+  private links: string[] = [];
   constructor() {
     super();
     getPP().then((response: any) => {
@@ -60,6 +81,22 @@ export default class Profile extends Vue {
           image.src = URL.createObjectURL(response.data);
         }
       }
+    });
+    getProfile().then((response: any) => {
+      if (response.data) {
+        this.userProfile = response.data;
+        console.log(this.userProfile);
+      }
+    });
+  }
+
+  private cardModal() {
+    this.$buefy.modal.open({
+      parent: this,
+      component: EditProfile,
+      hasModalCard: true,
+      customClass: "custom-class custom-class-2",
+      trapFocus: true,
     });
   }
 }

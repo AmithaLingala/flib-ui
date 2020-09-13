@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {URL} from './config'
+import { URL } from './config'
 
 let userDetails: any | null = null;
 
@@ -48,69 +48,85 @@ export async function updatepp(file: any) {
             }
 
             return await axios.post(URL + 'set-user-profile-picture', formData, config)
-            } catch (error) {
-                return {
-                    error: error.message,
-                }
-            }
-        }
-}
-    export async function login(data: any) {
-        try {
-            const result = await axios.post(URL + 'login', data);
-            const mydata = "userInfo";
-            //console.log(result);
-            localStorage.setItem(mydata, JSON.stringify(result.data.userDetails));
-            const userDetails = localStorage.getItem(mydata);
-            //console.log("uwuuuuuuu"+uname);
-
-
-            return result.data;
-
         } catch (error) {
             return {
                 error: error.message,
             }
         }
     }
+}
+export async function login(data: any) {
+    try {
+        const result = await axios.post(URL + 'login', data);
+        const mydata = "userInfo";
+        //console.log(result);
+        localStorage.setItem(mydata, JSON.stringify(result.data.userDetails));
+        const userDetails = localStorage.getItem(mydata);
+        //console.log("uwuuuuuuu"+uname);
 
 
-    export async function getPP() {
-        if (userDetails !== null) {
-            const result = await axios.get(URL + 'user-profile-picture', {
-                headers: {
-                    "Authorization": userDetails.token,
-                },
-                responseType: "blob"
-            });
-            return result;
+        return result.data;
+
+    } catch (error) {
+        return {
+            error: error.message,
         }
+    }
+}
+
+
+export async function getPP() {
+    if (userDetails !== null) {
+        const result = await axios.get(URL + 'user-profile-picture', {
+            headers: {
+                "Authorization": userDetails.token,
+            },
+            responseType: "blob"
+        });
+        return result;
+    }
+    return null;
+}
+export async function getProfile() {
+    if (userDetails !== null) {
+        const result = await axios.get(URL + 'user-profile', {
+            headers: {
+                "Authorization": userDetails.token,
+            },
+
+        });
+        return result.data;
+    }
+    return null;
+}
+export async function getbooks() {
+    if (userDetails !== null) {
+        const result = await axios.get(URL + 'books', {
+
+        });
+        return result.data;
+    }
+    return null;
+}
+export async function getPages(id: any) {
+    if (userDetails !== null) {
+        const result = await axios.get(URL + 'pages/?id=' + id);
+        return result.data;
+    }
+    return null;
+}
+
+export function getUserDetails(): any | null {
+    const data = localStorage.getItem("userInfo");
+    if (data) {
+        userDetails = JSON.parse(data)
+    } else {
         return null;
     }
-    export async function getProfile() {
-        if (userDetails !== null) {
-            const result = await axios.get(URL + 'user-profile', {
-                headers: {
-                    "Authorization": userDetails.token,
-                },
+    return userDetails;
+}
 
-            });
-            return result;
-        }
-        return null;
-    }
-
-    export function getUserDetails(): any | null {
-        const data = localStorage.getItem("userInfo");
-        if (data) {
-            userDetails = JSON.parse(data)
-        } else {
-            return null;
-        }
-        return userDetails;
-    }
-
-    export function setUserDetails(value: string): any | null {
-        localStorage.setItem("userInfo", value);
-        userDetails = null;
-    }
+export function setUserDetails(value: string): any | null {
+    localStorage.setItem("userInfo", value);
+    userDetails = null;
+}

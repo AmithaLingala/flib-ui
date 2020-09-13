@@ -9,7 +9,6 @@
     <br />
     <br />
     <div class="container is-fluid" id="card-holder">
-      <div class="columns"></div>
       <div class="columns">
         <div class="column is-5">
           <a class="card box" href="/read">
@@ -29,19 +28,35 @@
             </div>
           </a>
         </div>
-        
+      </div>
+
+      <div class="title has-text-dark is-fluid">Books</div>
+
+      <div class="column is-3">
+        <a class="card box" v-for="(book, i) in books" :key="i" :href="'/book/?id='+book.book_id">
+          <span>{{book.title}}</span>
+          <br />
+          <span>{{book.description}}</span>
+        </a>
       </div>
     </div>
-    <br>
-        <br>
+    <br />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-
+import { getbooks } from "../apis/user";
 @Component
 export default class Home extends Vue {
   @Prop() private msg!: string;
+  private books = getbooks();
+  created() {
+    getbooks().then((res) => {
+      console.log(res.response);
+
+      this.books = res.response;
+    });
+  }
 }
 </script>

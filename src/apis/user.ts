@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const URL = 'http://192.168.0.104:3422/';
+import {URL} from './config'
 
 let userDetails: any | null = null;
 

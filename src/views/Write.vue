@@ -35,7 +35,7 @@
           <nav class="level">
             <div class="level-left">
               <div class="level-item">
-                <button class="button is-info" type="submit" @click="submit()">Submit</button>
+                <button class="button is-info" @click="submit()">Submit</button>
               </div>
             </div>
             <div class="level-right">
@@ -53,6 +53,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
+import { createBook } from "../apis/write";
 @Component
 export default class Write extends Vue {
   private tags: Array<string> = [];
@@ -63,7 +64,14 @@ export default class Write extends Vue {
   private postanon = false;
 
   submit() {
-    console.log(this.tags, this.coverImage, this.bookName, this.bookDesc, this.postanon);
+    const data = {
+      title: this.bookName,
+      description: this.bookDesc,
+      tags: this.tags,
+      annonymous: this.postanon,
+      cover: this.file,
+    };
+    createBook(data);
   }
 
   @Watch("file")
